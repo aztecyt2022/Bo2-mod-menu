@@ -307,7 +307,6 @@ booleanOpposite(bool)
 CreateMenu()
 {
      self add_menu("Main Menu", Undefined, "Verified");
-     self add_option("Main Menu", "^3Admin ^2Testing", ::submenu, "Sub Option 11.1", "Sub Option 11.1");
      self add_option("Main Menu", "^1User Menu", ::submenu, "Sub Option 1", "Sub Option 1");
      self add_option("Main Menu", "^1Weapon Menu", ::submenu, "Sub Option 8", "Sub Option 8");
      self add_option("Main Menu", "^1Vision Menu", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
