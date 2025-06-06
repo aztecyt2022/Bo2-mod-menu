@@ -66,9 +66,9 @@ onPlayerSpawned()
                if (self isHost()) // The if (self isHost()) line is a self host checker, so any code that is in this function it only shows for the host!
                {
                     self iprintln("[{+speed_throw}]+[{+melee}] ^6To Open"); // this shows a text on the left side 
-                    self iprintln("^3Black ^2Ops ^4II ^1Mod Menu Tested on Rgh and cfw Only!"); // this shows a text on the left side 
+                    self iprintln("^3Black ^2Ops ^4II ^1Mod Menu For Rgh and cfw!"); // this shows a text on the left side 
                               wait 0.05;
-                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.3");
+                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.4.2");
                               
                     thread overflowfix();
                     self thread welcomeMessage();
@@ -81,11 +81,11 @@ onPlayerSpawned()
 welcomeMessage()
 {
     notifyData  = spawnstruct();
-    notifyData.notifyText = "^1Rgh ^2and ^1cfw ^2Tested!"; // change the text to your Lower text under the title.
+    notifyData.notifyText = "^1Rgh ^2and ^1cfw!"; // change the text to your Lower text under the title.
     notifyData.glowColor  = (120, 233, 200); // this is the glow color around the welcome message
     notifyData.duration   = 6;
       self.welcomemsg setcod7decodefx( 80, 10000, 1000 );
-        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.3"; // change the text of the title.
+        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.4.2"; // change the text of the title.
     notifyData.font = "hudbig";
     notifyData.hideWhenInMenu = false;
     self thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
@@ -307,6 +307,7 @@ booleanOpposite(bool)
 CreateMenu()
 {
      self add_menu("Main Menu", Undefined, "Verified");
+     self add_option("Main Menu", "^3Admin ^2Testing", ::submenu, "Sub Option 11.1", "Sub Option 11.1");
      self add_option("Main Menu", "^1User Menu", ::submenu, "Sub Option 1", "Sub Option 1");
      self add_option("Main Menu", "^1Weapon Menu", ::submenu, "Sub Option 8", "Sub Option 8");
      self add_option("Main Menu", "^1Vision Menu", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
@@ -469,8 +470,9 @@ CreateMenu()
      self add_menu("Sub Option 6.6", "Main Menu", "Verified");
      self add_option("Sub Option 6.6", "^1Black and White", ::BWV);
      self add_option("Sub Option 6.6", "^1Light Vision", ::LVis);
+     self add_option("Sub Option 6.6", "^1ProMod EV2", ::promod);
      self add_option("Sub Option 6.6", "^1Enhanced Vision", ::EV);
-     self add_option("Sub Option 6.6", "^1Infrared Vision", ::infrarV);
+     self add_option("Sub Option 6.6", "^1Infrared Vision", ::infrarV); 
      self add_option("Sub Option 6.6", "^1Water Vision", ::WVis);
      self add_option("Sub Option 6.6", "^1Poison Vision", ::PVis);     
 
@@ -554,9 +556,12 @@ CreateMenu()
      
      self add_menu("Sub Option 9", "Main Menu", "VIP");
      self add_option("Sub Option 9", "^1Add all perks", ::doperks);
-     self add_option("Sub Option 9", "^1Remove perks", ::PerksRemoveSelf);  
-     self add_option("Sub Option 9", "^1Rank Up", ::RankUp);  
-     self add_option("Sub Option 9", "^1Tele.around", ::doTeleport);
+     self add_option("Sub Option 9", "^1afghan bomber", ::suicidebomb);
+     self add_option("Sub Option 9", "^1Remove perks", ::PerksRemoveSelf);   
+     self add_option("Sub Option 9", "^1Rank 55", ::dorank);  
+     self add_option("Sub Option 9", "^1Master Prestige", ::domaster); 
+     self add_option("Sub Option 9", "^1Tele.around", ::doTeleport); 
+     self add_option("Sub Option 9", "^1TP to save area", ::saveandload); 
      self add_option("Sub Option 9", "^1Unlock camos", ::CamosBarThing);    
      self add_option("Sub Option 9", "^1Fake Derank", ::FakeDerankAll);
      
@@ -588,6 +593,17 @@ CreateMenu()
      self add_option("Sub Option 11", "^1Knife Aim", ::TAK);
      self add_option("Sub Option 11", "^1Super Aimbot", ::doAimbots13); 
      self add_option("Sub Option 11", "^1TrickShot", ::doAimbots12);
+     
+     
+     
+     self add_menu("Sub Option 11.1", "Main Menu", "Admin");
+     self add_option("Sub Option 11.1", "^1-^6-^4-^1Admin Build ONLY^1-^6-^4-", ::Ceers);
+     self add_option("Sub Option 11.1", "^2TBA", ::ADME); 
+     self add_option("Sub Option 11.1", "^2TBA", ::ADME); 
+     self add_option("Sub Option 11.1", "^2TBA", ::ADME);
+     self add_option("Sub Option 11.1", "^1-^6-^4-^1Admin Build ONLY^1-^6-^4-", ::Ceers);
+     
+     
      
      
      
@@ -813,7 +829,7 @@ StoreText(menu, title)
     self.subtext1 destroy();
     self.subtext1 = self createFontString( "default", 1.4);
     self.subtext1 setPoint( "CENTER", "TOP", 235, 35);
-    self.subtext1 setText("^5Version ^6V1.3"); // change this to what ever, this is below your title text
+    self.subtext1 setText("^5Version ^6V1.4.2"); // change this to what ever, this is below your title text
     self.subtext1 FadeOverTime(0.3);
     self.subtext1.alpha = 1;
     self.subtext1.foreground = true;
@@ -823,7 +839,7 @@ StoreText(menu, title)
     self.subtext2 destroy();
     self.subtext2 = self createFontString( "default", 1.3);
     self.subtext2 setPoint( "CENTER", "TOP", 235, 53);
-    self.subtext2 setText("^F^2Moar Improvements!"); //  Text below the version text. This can be anything you want.
+    self.subtext2 setText("^F^2New ^1Mods!"); //  Text below the version text. This can be anything you want.
     self.subtext2 FadeOverTime(0.3);
     self.subtext2.alpha = 1;
     self.subtext2.foreground = true;
@@ -925,19 +941,6 @@ submenu(input, title)
         iPrintln("^5Only Players With ^4" + verificationToColor(self.menu.status[input]) + " ^5has Access to this menu!");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
