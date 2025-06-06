@@ -1,4 +1,8 @@
+Renamed back to README.md as github cannot read any other format for live updates :c sad face
 # Bo2-mod-menu github update 1
+
+
+
 
 New download for the bo2 mod menu that was created for xbox 360(RGH) and ps3(CFW)
 
