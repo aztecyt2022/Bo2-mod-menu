@@ -6,7 +6,7 @@ Version 1.4.2
 
 +Save and load pos tp added
 
-+SLEC Text filler added for empty admin slots
++Admin Sub menu disabled
 
 +added rank 55 
 
