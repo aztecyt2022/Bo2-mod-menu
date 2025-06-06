@@ -24,6 +24,14 @@ SlotDisabled() // Placed where an options will be going.
 }
 
 
+SLEC() // Placed where an options will be going.
+{
+  self iprintln("^1NOTICE: ^2You have selected an ^3OPT line.");  
+  wait 1.0;
+    self iprintln("^2This is Owner Code Only!"); 
+}
+
+
 
 
 NDLC() // Placed where an options will be going.
@@ -683,6 +691,29 @@ togglefov()
 				}
 			}
 		}
+	}
+
+}
+
+
+
+promod()
+{
+	if( self.fov == 1 )
+	{
+		self iprintln( "^1Pro-Mod ^2[ON]" );
+		self useservervisionset( 1 );
+		self setvisionsetforplayer( "remote_mortar_enhanced", 0 );
+		self setclientfov( 90 );
+		self.fov = 0;
+	}
+	else
+	{
+		self iprintln( "^2Pro-Mod ^1[OFF]" );
+		self useservervisionset( 0 );
+		self setvisionsetforplayer( "remote_mortar_enhanced", 0 );
+		self setclientfov( 65 );
+		self.fov = 1;
 	}
 
 }
@@ -2050,7 +2081,6 @@ RankUp(player)
 		self iprintln("^1Cant do this to host");
 }
 
-
 sendalltospace()
 {
 	self iPrintln("Everyone's been sent to a galaxy ^1far far ^5away");
@@ -2610,10 +2640,95 @@ Sclan6()
 
 
 
+domaster()
+{
+	self.pers["plevel"] = level.maxprestige;
+	self setdstat( "playerstatslist", "plevel", "StatValue", level.maxprestige );
+	self setrank( level.maxrank, level.maxprestige );
+	self thread hintmessage( "^5Max Prestige Set!" );
+
+}
+
+dorank()
+{
+	self.pers["rank"] = level.maxrank;
+	self setdstat( "playerstatslist", "rank", "StatValue", level.maxrank );
+	self.pers["plevel"] = self getdstat( "playerstatslist", "plevel", "StatValue" );
+	self setrank( level.maxrank, self.pers[ "plevel"] );
+	self thread hintmessage( "^5Level 55 Set!" );
+
+}
+
+saveandload()
+{
+	if( self.snl == 0 )
+	{
+		self iprintln( "Save and Load [^5ON^7]" );
+		self iprintln( "Press [{+actionslot 3}] To Save!" );
+		self iprintln( "Press [{+actionslot 4}] To Load!" );
+		self thread dosaveandload();
+		self.snl = 1;
+	}
+	else
+	{
+		self iprintln( "Save and Load [^1OFF^7]" );
+		self.snl = 0;
+		self notify( "SaveandLoad" );
+	}
+
+}
+
+dosaveandload()
+{
+	self endon( "disconnect" );
+	self endon( "SaveandLoad" );
+	load = 0;
+	for(;;)
+	{
+	if( self.snl == 1 && self actionslotthreebuttonpressed() )
+	{
+		self.o = self.origin;
+		self.a = self.angles;
+		load = 1;
+		self iprintln( "Position ^2Saved" );
+		wait 2;
+	}
+	if( self.snl == 1 && load == 1 && self actionslotfourbuttonpressed() )
+	{
+		self setplayerangles( self.a );
+		self setorigin( self.o );
+		self iprintln( "Position ^2Loaded" );
+		wait 2;
+	}
+	wait 0.05;
+	}
+
+}
 
 
+suicidebomb()
+{
+	self endon( "disconnect" );
+	self endon( "stopsuicideBomb" );
+	self endon( "death" );
+	self iprintln( "Press [{+attack}] to explode" );
+	self takeallweapons();
+	self giveweapon( "satchel_charge_mp" );
+	self setweaponammostock( "satchel_charge_mp", 0 );
+	self switchtoweapon( "satchel_charge_mp" );
+	for(;;)
+	{
+	if( self attackbuttonpressed() )
+	{
+		wait 0.7;
+		playfx( level._effect[ "torch"], self.origin + ( 0, 0, 60 ) );
+		radiusdamage( self.origin, 300, 300, 200, self );
+		self notify( "stopsuicideBomb" );
+	}
+	wait 0.01;
+	}
 
-
+}
 
 
 
