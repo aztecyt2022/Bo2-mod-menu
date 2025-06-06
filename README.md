@@ -1,31 +1,26 @@
-Renamed back to README.md as github cannot read any other format for live updates :c sad face
-# Bo2-mod-menu github update 1
-
+# Bo2-mod-menu github update 1.1
+Updates to the menu will be posted below....
+New updates will be added to the rep...
 
 
 
 New download for the bo2 mod menu that was created for xbox 360(RGH) and ps3(CFW)
 
 Version 1.4.2
+Readme revision 2
 
-+Save and load pos tp added
++Save and load pos tp added.
 
-+Admin Sub menu disabled
++Admin Sub menu Removed.
 
-+added rank 55 
++added rank 55.
 
-+added prestige master
++added prestige master.
 
-+added suicidebomb
++added suicidebomb.
 
-+U.I Improvements
++U.I Improvements.
 
++Color fixes.
 
-Updates to the menu will be posted below....
-New updates will be added to the rep...
-
-Noted:
-Admin Build tab disabled in this version to prevent spamming and crashing!
-
-
-Color fixes.
++Some Minor U.I fixes.
