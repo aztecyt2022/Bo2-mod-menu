@@ -1,7 +1,7 @@
 MSG()
 {
 notifyData = spawnstruct();
-notifyData.titleText = "^1Menu ^3Version: ^5V1.3";
+notifyData.titleText = "^1Menu ^3Version: ^5V1.4.2";
 notifydata.notifytext = m;
 level.strings[level.strings.size] = notifydata.titletext;
 level.strings[level.strings.size] = notifydata.notifytext;
@@ -237,4 +237,5 @@ foreach( player in level.players )
 player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
 }
 }
+
 
