@@ -1,11 +1,11 @@
-# Bo2-mod-menu
+# Bo2-mod-menu Final update!
 Updates to the menu will be posted here!
 
 
 New download for the bo2 mod menu that was created for xbox 360(RGH) and ps3(CFW)
 
 Version 1.5.4
-Readme revision 3
+Readme revision 3.1
 
 +U.I Improvements.
 
