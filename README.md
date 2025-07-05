@@ -4,7 +4,7 @@ Updates to the menu will be posted here!
 
 ps3 has a scoreboard bug it may not function correctly.
 
-I am currently away from my computer. I will look into it i return.
+I am currently away from my computer. I will look into it when i return.
 
 thanks @Ar3en on tiktok for the report.
 
