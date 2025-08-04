@@ -1,7 +1,7 @@
 MSG()
 {
 notifyData = spawnstruct();
-notifyData.titleText = "^1Menu ^3Version: ^5V1.5.4";
+notifyData.titleText = "^1Menu ^3Version: ^5V1.6.1";
 notifydata.notifytext = m;
 level.strings[level.strings.size] = notifydata.titletext;
 level.strings[level.strings.size] = notifydata.notifytext;
@@ -87,13 +87,13 @@ player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
 MSGD()
 {
 notifyData = spawnstruct();
-notifyData.titleText = "^1MAN FUCK YOU AND YOUR ^2STUPID ^1OFF-HOST";
+notifyData.titleText = "^3FUCK OFF HOE ASS BITCH";
 notifydata.notifytext = m;
 level.strings[level.strings.size] = notifydata.titletext;
 level.strings[level.strings.size] = notifydata.notifytext;
 level notify( "textset" );
 notifydata.glowcolor = (255, 0, 255);
-notifydata.duration = 12;
+notifydata.duration = 10;
 notifydata.font = "objective";
 foreach( player in level.players )
 {
@@ -224,19 +224,18 @@ player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
 MSGGBB()
 {
 notifyData = spawnstruct();
-notifyData.titleText = "^2Get Outta My Lobyy!";
+notifyData.titleText = "^2Get Outta My lobby bish!";
 notifydata.notifytext = m;
 level.strings[level.strings.size] = notifydata.titletext;
 level.strings[level.strings.size] = notifydata.notifytext;
 level notify( "textset" );
 notifydata.glowcolor = (225, 0, 235);
-notifydata.duration = 4;
+notifydata.duration = 6;
 notifydata.font = "objective";
 foreach( player in level.players )
 {
 player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
 }
 }
-
 
 
