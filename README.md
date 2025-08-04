@@ -1,6 +1,10 @@
 # Bo2-mod-menu!
 
-Readme revision 6.2
+Readme revision 6.4
+
+
+Added a new release version so you can download faster.
+
 
 MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
 
