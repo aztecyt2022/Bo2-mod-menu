@@ -75,9 +75,6 @@ Ceers() // Missing for blank space.
   self iprintln("^2organizer.");
 } 
 
-
-
-
 God_Toggle()
 {
 	if( self.god == 0 )
@@ -487,11 +484,11 @@ instaEnd()
 }
 
 
-
 doRestart()
 {
     map_restart(false);
 }
+
 
 Inf_Game()
 {
@@ -826,7 +823,7 @@ rapidfire()
 
 }
 
-norecooil()
+norecoil()
 {
 	if( self.norecoil == 0 )
 	{
@@ -2004,9 +2001,6 @@ xm8()
 
 
 
-
-
-
 SuperFastWalk()
 {
 	self endon( "disconnect" );
@@ -2022,13 +2016,6 @@ SuperFastWalk()
 		setdvar( "g_speed", "200" );
 		self.sm = 1;
 	}
-
-}
-
-givegodplayer(player)
-{
-	self iprintln( "God Mode Given to ^5" + player.name);
-	player thread God_Toggle();
 
 }
 
@@ -2080,6 +2067,29 @@ RankUp(player)
 	else
 		self iprintln("^1Cant do this to host");
 }
+
+
+domaster()
+{
+	self.pers["plevel"] = level.maxprestige;
+	self setdstat( "playerstatslist", "plevel", "StatValue", level.maxprestige );
+	self setrank( level.maxrank, level.maxprestige );
+	self thread hintmessage( "^5Max Prestige Set!" );
+
+}
+
+
+dorank()
+{
+	self.pers["rank"] = level.maxrank;
+	self setdstat( "playerstatslist", "rank", "StatValue", level.maxrank );
+	self.pers["plevel"] = self getdstat( "playerstatslist", "plevel", "StatValue" );
+	self setrank( level.maxrank, self.pers[ "plevel"] );
+	self thread hintmessage( "^5Level 55 Set!" );
+
+}
+
+
 
 sendalltospace()
 {
@@ -2419,45 +2429,6 @@ ChangeClass()
 	}
 }
 
-
-initTeamChange()
-{
-	if(self.TeamPattern==0)
-	{
-		self.TeamPattern=1;
-		self iPrintln("Team changed to ^1axis");
-		self thread changeteam("axis");
-	}
-	else
-	{
-		self.TeamPattern=1;
-		self iPrintln("Team changed to ^2allies");
-		self thread changeteam("allies");
-	}
-}
-changeteam(team)
-{
-	if(self.sessionstate!="dead")
-	{
-		self.switching_teams=1;
-		self.joining_team=team;
-		self.leaving_team=self.pers["team"];
-		self suicide();
-	}
-	self.pers["team"]=team;
-	self.team=team;
-	self.sessionteam=self.pers["team"];
-	if(!level.teambased)
-	{
-		self.ffateam=team;
-	}
-	self maps/mp/gametypes/_globallogic_ui::updateobjectivetext();
-	self maps/mp/gametypes/_spectating::setspectatepermissions();
-	self setclientscriptmainmenu(game["menu_class" ]);
-	self openmenu(game["menu_class" ]);
-	self notify("end_respawn");
-}
-
 tc(camo)
 {
 	self notify("discoCamoEND");
@@ -2589,26 +2560,6 @@ killcam6()
 		setdvar( "scr_killcam_time", 5 );
 		self.killcam = 1;
 	}
-
-}
-
-
-domaster()
-{
-	self.pers["plevel"] = level.maxprestige;
-	self setdstat( "playerstatslist", "plevel", "StatValue", level.maxprestige );
-	self setrank( level.maxrank, level.maxprestige );
-	self thread hintmessage( "^5Max Prestige Set!" );
-
-}
-
-dorank()
-{
-	self.pers["rank"] = level.maxrank;
-	self setdstat( "playerstatslist", "rank", "StatValue", level.maxrank );
-	self.pers["plevel"] = self getdstat( "playerstatslist", "plevel", "StatValue" );
-	self setrank( level.maxrank, self.pers[ "plevel"] );
-	self thread hintmessage( "^5Level 55 Set!" );
 
 }
 
@@ -2808,4 +2759,125 @@ suicidebomb()
 	wait 0.01;
 	}
 
+}
+
+
+
+
+
+addtime()
+{
+	self iprintlnbold( "^4Time limit ^2increased ^4by 1 Minute!" );
+	timeswag = getgametypesetting( "timelimit" );
+	timeswag = timeswag + 1;
+	setgametypesetting( "timelimit", timeswag );
+
+}
+
+
+
+removetime()
+{
+	self iprintlnbold( "^4Time limit ^1decreased ^4by 1 Minute!" );
+	timeswag = getgametypesetting( "timelimit" );
+	timeswag = timeswag - 1;
+	setgametypesetting( "timelimit", timeswag );
+
+}
+
+
+
+
+infaa()
+{
+	if(level.ammoall==false)
+	{
+		level.ammoall=true;
+		if(self.ammunition==false)
+		{
+			self.ammunition=true;
+			self notify("stopUnlimitedAmmo");
+		}
+		iPrintln("Infinite Ammo for All ^2[ON]");
+		while(1)
+		{
+			if(level.ammoall)
+			{
+				foreach(player in level.players)
+				{
+					currentWeapon=player getcurrentweapon();
+					if(currentWeapon!="none")
+					{
+						player setweaponammoclip(currentWeapon,weaponclipsize(currentWeapon));
+						player givemaxammo(currentWeapon);
+					}
+					currentoffhand=player getcurrentoffhand();
+					if(currentoffhand!="none")
+					player givemaxammo(currentoffhand);
+				}
+			}
+			else
+			{
+				break;
+			}
+			wait 0.05;
+		}
+	}
+	else
+	{
+		level.ammoall=false;
+		iPrintln("Infinite Ammo for All ^1[OFF]");
+	}
+}
+
+
+
+
+FKDA()
+{
+	self iPrintln("^1Deranked Everyone.");
+	foreach (player in level.players)
+	{
+		player iPrintlnbold("^1You have been deranked.");
+		player setrank(0,0);
+	}
+}
+
+
+initTeamChange()
+{
+	if(self.TeamPattern==0)
+	{
+		self.TeamPattern=1;
+		self iPrintln("Team changed to ^1axis");
+		self thread changeteam("axis");
+	}
+	else
+	{
+		self.TeamPattern=1;
+		self iPrintln("Team changed to ^2allies");
+		self thread changeteam("allies");
+	}
+}
+changeteam(team)
+{
+	if(self.sessionstate!="dead")
+	{
+		self.switching_teams=1;
+		self.joining_team=team;
+		self.leaving_team=self.pers["team"];
+		self suicide();
+	}
+	self.pers["team"]=team;
+	self.team=team;
+	self.sessionteam=self.pers["team"];
+	if(!level.teambased)
+	{
+		self.ffateam=team;
+	}
+	self maps/mp/gametypes/_globallogic_ui::updateobjectivetext();
+	self maps/mp/gametypes/_spectating::setspectatepermissions();
+	self setclientscriptmainmenu(game["menu_class" ]);
+	self openmenu(game["menu_class" ]);
+	self notify("end_respawn");
 }
