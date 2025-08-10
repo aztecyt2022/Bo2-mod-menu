@@ -3,6 +3,13 @@
 Readme revision 6.4
 
 
+IF YOU KNOW HOW TO LOAD IT VIA GAME GO AHEAD 
+DO NOT MESSAGE ME.....I COULD CARELESS...
+
+
+
+
+
 Added a new release version so you can download faster.
 
 
