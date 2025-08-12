@@ -1,7 +1,7 @@
 MSG()
 {
 notifyData = spawnstruct();
-notifyData.titleText = "^1Menu ^3Version: ^5V1.6.1";
+notifyData.titleText = "^1Menu ^3Version: ^5V1.6.3";
 notifydata.notifytext = m;
 level.strings[level.strings.size] = notifydata.titletext;
 level.strings[level.strings.size] = notifydata.notifytext;
@@ -237,5 +237,42 @@ foreach( player in level.players )
 player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
 }
 }
+
+
+MSGGA1()
+{
+notifyData = spawnstruct();
+notifyData.titleText = "^3SHUT THE ^1FUCK ^3UP!";
+notifydata.notifytext = m;
+level.strings[level.strings.size] = notifydata.titletext;
+level.strings[level.strings.size] = notifydata.notifytext;
+level notify( "textset" );
+notifydata.glowcolor = (225, 0, 235);
+notifydata.duration = 4;
+notifydata.font = "objective";
+foreach( player in level.players )
+{
+player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
+}
+}
+
+
+MSGGA2()
+{
+notifyData = spawnstruct();
+notifyData.titleText = "^3Listen To This moron!!";
+notifydata.notifytext = m;
+level.strings[level.strings.size] = notifydata.titletext;
+level.strings[level.strings.size] = notifydata.notifytext;
+level notify( "textset" );
+notifydata.glowcolor = (225, 0, 235);
+notifydata.duration = 6;
+notifydata.font = "objective";
+foreach( player in level.players )
+{
+player thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
+}
+}
+
 
 
