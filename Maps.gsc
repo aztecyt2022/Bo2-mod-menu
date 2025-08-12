@@ -73,9 +73,30 @@ Nuketown()
 map( "mp_nuketown_2020", true );
 }
 
+skate()
+{
+map( "mp_skate", true );
+}
+ 
+Studio()
+{
+map( "mp_Studio", true );
+}
+ 
+paintball()
+{
+map( "mp_paintball", true );
+}
+ 
+hydro()
+{
+map( "mp_hydro", true );
+}
 
-
-
+mirage()
+{
+map( "mp_mirage", true );
+}
 
 
 
