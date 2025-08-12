@@ -34,11 +34,9 @@ SLEC() // Placed where an options will be going.
 
 
 
-NDLC() // Placed where an options will be going.
+ADDDLC() // Placed where an options will be going.
 {
-  self iprintln("^1NOTICE: ^2DLC MAPS ARE NOT ADDED.");  
-  wait 3.6;
-    self iprintln("^3Future Update!"); 
+  self iprintln("^1UPDATE: ^2DLC MAPS ARE BEING ADDED INTO THE MENU");  
 }
 
 
