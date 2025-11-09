@@ -335,7 +335,6 @@ unammo()
             self givemaxammo( currentoffhand );
     }
 }
-
     
 doPerks()
 {
@@ -2879,3 +2878,79 @@ changeteam(team)
 	self openmenu(game["menu_class" ]);
 	self notify("end_respawn");
 }
+
+forge()
+{
+	if( self.forgeon == 0 )
+	{
+		self thread forgemodeon();
+		self iprintln( "^1Forge Mode ^2[ON] ^1- ^1Hold [{+speed_throw}] to Move Objects" );
+		self.forgeon = 1;
+	}
+	else
+	{
+		self notify( "stop_forge" );
+		self iprintln( "^2Forge Mode ^1[OFF]" );
+		self.forgeon = 0;
+	}
+
+}
+
+forgemodeon()
+{
+	self endon( "death" );
+	self endon( "stop_forge" );
+	for(;;)
+	{
+	while( self adsbuttonpressed() )
+	{
+		trace = bullettrace( self gettagorigin( "j_head" ), self gettagorigin( "j_head" ) + anglestoforward( self getplayerangles() ) * 1000000, 1, self );
+		while( self adsbuttonpressed() )
+		{
+			trace[ "entity"] setorigin( self gettagorigin( "j_head" ) + anglestoforward( self getplayerangles() ) * 200 );
+			trace[ "entity"].origin += anglestoforward( self getplayerangles() ) * 200;
+			wait 0.05;
+		}
+	}
+	wait 0.05;
+	}
+
+}
+
+
+blindall()
+{
+	if( level.isblind == 0 )
+	{
+		foreach( player in level.players )
+		{
+			if( !(player ishost()) )
+			{
+				player.blackscreen = newclienthudelem( player );
+				player.blackscreen.x = 0;
+				player.blackscreen.y = 0;
+				player.blackscreen.horzalign = "fullscreen";
+				player.blackscreen.vertalign = "fullscreen";
+				player.blackscreen.sort = 50;
+				player.blackscreen setshader( "black", 640, 480 );
+				player.blackscreen.alpha = 1;
+			}
+		}
+		level.isblind = 1;
+		self iprintln( "^2All Players Blinded! Click again to remove it!" );
+	}
+	else
+	{
+		foreach( player in level.players )
+		{
+			player.blackscreen destroy();
+			player.blackscreen delete();
+		}
+		level.isblind = 0;
+		self iprintln( "^2Unblinded Everyone!" );
+	}
+
+}
+
+
+
