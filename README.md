@@ -1,30 +1,39 @@
 # Bo2-mod-menu!
 
-Readme revision 7
+Readme revision 7.4
 
-Finally decided to change the compiled name to the proper name to load the menu via a gsc loader so you dont have to do it manually..
+Update 25-11-08
+Menu stability improvements 
+Checked and working on xbguard and cipher
 
-
-My loading issues where related to missing files in my bo2 directory.
-when I added the new tesseract files and tu files to my bo2 I was able to load the menu!
-
-I have made a few changes to the menu...
-LOAD THE MENU TO SEE WHAT HAS CHANGED I REMOVED THE UPDATE LIST HERE!
 
 MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
 
 ISSUES RELATED TO CONSOLES.
+Menu can crash on rgh using gsc studio.
 
+Tesseract tested and working fine
+(Menu has no crashing when loading via modded bo2)
+
+-------------------------------------------------------------
+XBOX RGH/BADUPDATE/BADAVATAR
+Rgh - Working as it should.
+BU - Not tested.
+BA - Not tested.
+
+-------------------------------------------------------------
+PS3
 +PS3Hen is not tested and unsure if it works use at own risk.
-
-ISSUES RELATED TO PC BO2
+-------------------------------------------------------------
+-------------------------------------------------------------
+PC(STEAM)
 +Menu is not fully tested and not all options have been tested.
+-------------------------------------------------------------
 
 
 
 
 -------------------------------------------------------------
                     NOTES FOR MENU
-                    Menu may crash.
-                    I am looking into why.
+                      TBA
 -------------------------------------------------------------
