@@ -67,7 +67,7 @@ onPlayerSpawned()
                     self iprintln("[{+speed_throw}]+[{+melee}] ^6To Open"); // this shows a text on the left side 
                     self iprintln("^4Black ^6OPS II: ^2Mod Menu Loaded and Ready!"); // this shows a text on the left side 
                               wait 0.05;
-                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.6.3");
+                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.6.4B1");
                               
                     thread overflowfix();
                     self thread welcomeMessage();
@@ -84,7 +84,7 @@ welcomeMessage()
     notifyData.glowColor  = (120, 233, 200); // this is the glow color around the welcome message
     notifyData.duration   = 6;
       self.welcomemsg setcod7decodefx( 80, 10000, 1000 );
-        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.6.3"; // change the text of the title.
+        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.6.4B1"; // change the text of the title.
     notifyData.font = "hudbig";
     notifyData.hideWhenInMenu = false;
     self thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
@@ -306,20 +306,20 @@ booleanOpposite(bool)
 CreateMenu()
 {
      self add_menu("Main Menu", Undefined, "Verified");
-     self add_option("Main Menu", "^1User Menu", ::submenu, "Sub Option 1", "Sub Option 1");
-     self add_option("Main Menu", "^1Weapon Menu", ::submenu, "Sub Option 8", "Sub Option 8");  
-     self add_option("Main Menu", "^1Vision Menu", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
-     self add_option("Main Menu", "^1Streak Menu", ::submenu, "Sub Option 7", "Sub Option 7");
-     self add_option("Main Menu", "^1Notify Menu", ::submenu, "Sub Option 3", "Sub Option 3");
-     self add_option("Main Menu", "^1XP Menu", ::submenu, "Sub Option 5", "Sub Option 5");
-     self add_option("Main Menu", "^1Bot Menu", ::submenu, "Sub Option 6", "Sub Option 6");
-     self add_option("Main Menu", "^1Game Menu", ::submenu, "Sub Option 4", "Sub Option 4");
-     self add_option("Main Menu", "^1Map Menu", ::submenu, "Sub Option 2", "Sub Option 2");
-     self add_option("Main Menu", "^1Vip Menu", ::submenu, "Sub Option 9", "Sub Option 9");
-     self add_option("Main Menu", "^1Host Menu", ::submenu, "Sub Option 10", "Sub Option 10");     
-     self add_option("Main Menu", "^1Aimbot Menu", ::submenu, "Sub Option 11", "Sub Option 11");   
-     self add_option("Main Menu", "^1Verify Menu", ::submenu, "PlayersMenu", "Players Menu");
-     self add_option("Main Menu", "^1Online Options", ::submenu, "Sub Option 11.1", "Sub Option 11.1");  
+     self add_option("Main Menu", "^1User", ::submenu, "Sub Option 1", "Sub Option 1");
+     self add_option("Main Menu", "^1Weapon", ::submenu, "Sub Option 8", "Sub Option 8");  
+     self add_option("Main Menu", "^1Vision", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
+     self add_option("Main Menu", "^1KillStreak", ::submenu, "Sub Option 7", "Sub Option 7");
+     self add_option("Main Menu", "^1Notify", ::submenu, "Sub Option 3", "Sub Option 3");
+     self add_option("Main Menu", "^1XP", ::submenu, "Sub Option 5", "Sub Option 5");
+     self add_option("Main Menu", "^1Bot", ::submenu, "Sub Option 6", "Sub Option 6");
+     self add_option("Main Menu", "^1Game", ::submenu, "Sub Option 4", "Sub Option 4");
+     self add_option("Main Menu", "^1Map", ::submenu, "Sub Option 2", "Sub Option 2");
+     self add_option("Main Menu", "^1Vip", ::submenu, "Sub Option 9", "Sub Option 9");
+     self add_option("Main Menu", "^1Host", ::submenu, "Sub Option 10", "Sub Option 10");     
+     self add_option("Main Menu", "^1Aimbot", ::submenu, "Sub Option 11", "Sub Option 11");   
+     self add_option("Main Menu", "^1Verify", ::submenu, "PlayersMenu", "Players Menu");
+     self add_option("Main Menu", "^1Online", ::submenu, "Sub Option 11.1", "Sub Option 11.1");  
 
 
 
@@ -327,7 +327,9 @@ CreateMenu()
      
      
      self add_menu("Sub Option 1", "Main Menu", "Verified");
-     self add_option("Sub Option 1", "^1GodMode", ::God_Toggle); 
+     
+     self add_option("Sub Option 1", "^1Quick Setup", ::Quickie);   
+     self add_option("Sub Option 1", "^1GodMode", ::God_Toggle);  
      self add_option("Sub Option 1", "^1Auto TBag", ::tbag); 
      self add_option("Sub Option 1", "^1Noclip", ::NoclipMode);
      self add_option("Sub Option 1", "^1Ghost Mode", ::invis);     
@@ -372,15 +374,25 @@ CreateMenu()
 
 
      self add_menu("Sub Option 2.4", "Sub Option 2", "Co-Host");   							
-     self add_option("Sub Option 2.4", "^1-^4-^6-^4-^1!!!!ADDING DLC!!!!^1-^6-^2-^4-", ::ADDDLC); 
      self add_option("Sub Option 2.4", "^1Skate", ::skate);     
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);      
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
-     self add_option("Sub Option 2.4", "^1ADDDLC", ::ADDDLC);       
+     self add_option("Sub Option 2.4", "^1studio", ::studio);       
+     self add_option("Sub Option 2.4", "^1paintball", ::paintball);       
+     self add_option("Sub Option 2.4", "^1hydro", ::hydro);       
+     self add_option("Sub Option 2.4", "^1mirage", ::mirage);       
+     self add_option("Sub Option 2.4", "^1uplink", ::uplink);      
+     self add_option("Sub Option 2.4", "^1detour", ::detour);       
+     self add_option("Sub Option 2.4", "^1cove", ::cove);       
+     self add_option("Sub Option 2.4", "^1magma", ::magma);       
+     self add_option("Sub Option 2.4", "^1vertigo", ::vertigo);       
+     self add_option("Sub Option 2.4", "^1concert", ::concert);       
+     self add_option("Sub Option 2.4", "^1downhill", ::downhill);      
+     self add_option("Sub Option 2.4", "^1frostbite", ::frostbite);       
+     self add_option("Sub Option 2.4", "^1takeoff", ::takeoff);       
+     self add_option("Sub Option 2.4", "^1pod", ::pod);       
+     self add_option("Sub Option 2.4", "^1dig", ::dig); 
+     
+     
+     
      
      
      
@@ -831,7 +843,7 @@ StoreText(menu, title)
     self.torq destroy();
     self.torq = self createFontString( "default", 2.0);
     self.torq setPoint( "CENTER", "TOP", 235, 15);
-    self.torq setText("^1R3D ^F^2AC1D"); // this is the title of the menu, so change it to the name of your menu
+    self.torq setText("^1R3D ^2AC1D"); // this is the title of the menu, so change it to the name of your menu
     self.torq FadeOverTime(0.3);
     self.torq.alpha = 1;
     self.torq.foreground = true;
@@ -842,7 +854,7 @@ StoreText(menu, title)
     self.subtext1 destroy();
     self.subtext1 = self createFontString( "default", 1.4);
     self.subtext1 setPoint( "CENTER", "TOP", 235, 35);
-    self.subtext1 setText("^5Version ^6V1.6.3"); // change this to what ever, this is below your title text
+    self.subtext1 setText("^5Version ^6V1.6.4B1"); // change this to what ever, this is below your title text
     self.subtext1 FadeOverTime(0.3);
     self.subtext1.alpha = 1;
     self.subtext1.foreground = true;
@@ -852,7 +864,7 @@ StoreText(menu, title)
     self.subtext2 destroy();
     self.subtext2 = self createFontString( "default", 1.3);
     self.subtext2 setPoint( "CENTER", "TOP", 235, 53);
-    self.subtext2 setText("^F^2ADMIN ED."); //  Text below the version text. This can be anything you want.
+    self.subtext2 setText("^F^2Admin Build."); //  Text below the version text. This can be anything you want.
     self.subtext2 FadeOverTime(0.3);
     self.subtext2.alpha = 1;
     self.subtext2.foreground = true;
@@ -954,6 +966,15 @@ submenu(input, title)
         iPrintln("^5Only Players With ^4" + verificationToColor(self.menu.status[input]) + " ^5has Access to this menu!");
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
