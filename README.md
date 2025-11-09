@@ -20,13 +20,11 @@ ISSUES RELATED TO CONSOLES.
 ISSUES RELATED TO PC BO2
 +Menu is not fully tested and not all options have been tested.
 
-GENERAL ISSUES.
-+ did not test the map changer on any version.
 
 
 
-
-
+-------------------------------------------------------------
                     NOTES FOR MENU
-                    none at this time.
+                    Menu may crash.
+                    I am looking into why.
 -------------------------------------------------------------
