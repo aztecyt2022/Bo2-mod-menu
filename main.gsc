@@ -326,9 +326,7 @@ CreateMenu()
 
      
      
-     self add_menu("Sub Option 1", "Main Menu", "Verified");
-     
-     self add_option("Sub Option 1", "^1Quick Setup", ::Quickie);   
+     self add_menu("Sub Option 1", "Main Menu", "Verified"); 
      self add_option("Sub Option 1", "^1GodMode", ::God_Toggle);  
      self add_option("Sub Option 1", "^1Auto TBag", ::tbag); 
      self add_option("Sub Option 1", "^1Noclip", ::NoclipMode);
@@ -530,7 +528,7 @@ CreateMenu()
      self add_option("Sub Option 8", "^1Random Camo", ::randomcamo);  
      self add_option("Sub Option 8", "^1Low ammo flash", ::flashlowammo); 
      self add_option("Sub Option 8", "^1Disco Camo", ::Toggle_DiscoCamo);
-     self add_option("Sub Option 8", "^1Unlim.ammo", ::unammo); 
+     self add_option("Sub Option 8", "^1Unlim.ammo", ::unammo);  
      self add_option("Sub Option 8", "^1No Recoil", ::norecoil); 
      self add_option("Sub Option 8", "^1No Spread", ::nospread); 
      self add_option("Sub Option 8", "^1Rapid Fire", ::rapidfire);
@@ -626,8 +624,9 @@ CreateMenu()
      self add_menu("Sub Option 11.1", "Main Menu", "Admin");
      self add_option("Sub Option 11.1", "^1-^6-^4-^1Online Options^1-^6-^4-", ::Ceers);  
      self add_option("Sub Option 11.1", "^1Kill All", ::killall);
+     self add_option("Sub Option 11.1", "^1Blind All", ::blindall);
      self add_option("Sub Option 11.1", "^1Unlim. Ammo All", ::infiniteammoall); 
-     self add_option("Sub Option 11.1", "^1Disco Camo All", ::discocamoall);
+     self add_option("Sub Option 11.1", "^1Disco Camo All", ::discocamoall);  
      self add_option("Sub Option 11.1", "^1Freeze All", ::freezeallplayers); 
      self add_option("Sub Option 11.1", "^1Give all inf ammo", ::infaa);     
      self add_option("Sub Option 11.1", "^1Fake Derank all", ::FKDA);  
@@ -966,21 +965,6 @@ submenu(input, title)
         iPrintln("^5Only Players With ^4" + verificationToColor(self.menu.status[input]) + " ^5has Access to this menu!");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
