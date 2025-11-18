@@ -2,10 +2,8 @@
 
 Readme revision 7.4
 
-Update 25-11-08
+Update 25-11-18
 Menu stability improvements 
-Checked and working on xbguard and cipher
-
 MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
 -------------------------------------------------------------
 XBOX RGH/BADUPDATE/BADAVATAR
