@@ -7,14 +7,18 @@ Menu stability improvements
 Checked and working on xbguard and cipher
 
 MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
-
-Tesseract tested and working fine
 -------------------------------------------------------------
 XBOX RGH/BADUPDATE/BADAVATAR
 Rgh - Working as it should.
 BU - Not tested.
 BA - Not tested.
 
+
+
+
+-------------------------------------------------------------
+Found some bugs before I ended The development of the menu.
+I am fixing them before I Discontinued the menus development.
 -------------------------------------------------------------
 PS3
 +PS3Hen is not tested and unsure if it works use at own risk.
@@ -23,9 +27,6 @@ PS3
 PC(STEAM)
 +Menu is not fully tested and not all options have been tested.
 -------------------------------------------------------------
-
-
-
 
 -------------------------------------------------------------
                     NOTES FOR MENU
