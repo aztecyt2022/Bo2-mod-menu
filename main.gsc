@@ -67,7 +67,7 @@ onPlayerSpawned()
                     self iprintln("[{+speed_throw}]+[{+melee}] ^6To Open"); // this shows a text on the left side 
                     self iprintln("^4Black ^6OPS II: ^2Mod Menu Loaded and Ready!"); // this shows a text on the left side 
                               wait 0.05;
-                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.6.4B1");
+                    self iprintln("^6Menu: ^1R3d ^1Ac1d ^11.6.4");
                               
                     thread overflowfix();
                     self thread welcomeMessage();
@@ -84,7 +84,7 @@ welcomeMessage()
     notifyData.glowColor  = (120, 233, 200); // this is the glow color around the welcome message
     notifyData.duration   = 6;
       self.welcomemsg setcod7decodefx( 80, 10000, 1000 );
-        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.6.4B1"; // change the text of the title.
+        notifydata.titletext= "^1R3d ^1Ac1d ^1V1.6.4"; // change the text of the title.
     notifyData.font = "hudbig";
     notifyData.hideWhenInMenu = false;
     self thread maps\mp\gametypes\_hud_message::notifyMessage(notifyData);
@@ -306,20 +306,20 @@ booleanOpposite(bool)
 CreateMenu()
 {
      self add_menu("Main Menu", Undefined, "Verified");
-     self add_option("Main Menu", "^1User", ::submenu, "Sub Option 1", "Sub Option 1");
-     self add_option("Main Menu", "^1Weapon", ::submenu, "Sub Option 8", "Sub Option 8");  
-     self add_option("Main Menu", "^1Vision", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
-     self add_option("Main Menu", "^1KillStreak", ::submenu, "Sub Option 7", "Sub Option 7");
-     self add_option("Main Menu", "^1Notify", ::submenu, "Sub Option 3", "Sub Option 3");
-     self add_option("Main Menu", "^1XP", ::submenu, "Sub Option 5", "Sub Option 5");
-     self add_option("Main Menu", "^1Bot", ::submenu, "Sub Option 6", "Sub Option 6");
-     self add_option("Main Menu", "^1Game", ::submenu, "Sub Option 4", "Sub Option 4");
-     self add_option("Main Menu", "^1Map", ::submenu, "Sub Option 2", "Sub Option 2");
-     self add_option("Main Menu", "^1Vip", ::submenu, "Sub Option 9", "Sub Option 9");
-     self add_option("Main Menu", "^1Host", ::submenu, "Sub Option 10", "Sub Option 10");     
-     self add_option("Main Menu", "^1Aimbot", ::submenu, "Sub Option 11", "Sub Option 11");   
-     self add_option("Main Menu", "^1Verify", ::submenu, "PlayersMenu", "Players Menu");
-     self add_option("Main Menu", "^1Online", ::submenu, "Sub Option 11.1", "Sub Option 11.1");  
+     self add_option("Main Menu", "^1User Menu", ::submenu, "Sub Option 1", "Sub Option 1");
+     self add_option("Main Menu", "^1Weapon Menu", ::submenu, "Sub Option 8", "Sub Option 8");  
+     self add_option("Main Menu", "^1Vision Menu", ::submenu, "Sub Option 6.6", "Sub Option 6.6");
+     self add_option("Main Menu", "^1KillStreaks", ::submenu, "Sub Option 7", "Sub Option 7");
+     self add_option("Main Menu", "^1Notify Menu", ::submenu, "Sub Option 3", "Sub Option 3");
+     self add_option("Main Menu", "^1XP Settings", ::submenu, "Sub Option 5", "Sub Option 5");
+     self add_option("Main Menu", "^1Bot Menu", ::submenu, "Sub Option 6", "Sub Option 6");
+     self add_option("Main Menu", "^1Game Settings", ::submenu, "Sub Option 4", "Sub Option 4");
+     self add_option("Main Menu", "^1Map Changer", ::submenu, "Sub Option 2", "Sub Option 2");
+     self add_option("Main Menu", "^1Vip Options", ::submenu, "Sub Option 9", "Sub Option 9");
+     self add_option("Main Menu", "^1Host Menu", ::submenu, "Sub Option 10", "Sub Option 10");     
+     self add_option("Main Menu", "^1Aimbot Stuff", ::submenu, "Sub Option 11", "Sub Option 11");   
+     self add_option("Main Menu", "^1Verify Menu", ::submenu, "PlayersMenu", "Players Menu");
+     self add_option("Main Menu", "^1Online Options", ::submenu, "Sub Option 11.1", "Sub Option 11.1");  
 
 
 
@@ -462,7 +462,8 @@ CreateMenu()
      
      self add_menu("Sub Option 6", "Main Menu", "Host"); 
      self add_option("Sub Option 6", "^1-^4-^6-^4-^1Bot Options^1-^6-^2-^4-", ::Ceers);
-     self add_option("Sub Option 6", "^1Bot Options", ::submenu, "Sub Option 6.2", "Sub Option 6");     
+     self add_option("Sub Option 6", "^3Spawning ^2info", ::BOT2INFO);
+     self add_option("Sub Option 6", "^1Bot Options", ::submenu, "Sub Option 6.2", "Sub Option 6");  
      self add_option("Sub Option 6", "^1Bot Spawning", ::submenu, "Sub Option 6.3", "Sub Option 6");   
      self add_option("Sub Option 6", "^1-^4-^6-^4-^1Bot Options^1-^6-^2-^4-", ::Ceers);
 
