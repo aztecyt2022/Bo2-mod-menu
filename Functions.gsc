@@ -1,77 +1,42 @@
-PLC() // FOR PRIVATE MOD ADDONS THIS WILL BE SWAPPED BEFORE PUBLIC RELEASE OF THE MODS YOU SELECTED IN THE MENU
+SlotDisabled() // An Option to use when a Mod is glitchy after adding.Used for temp disable while fix is applied.
 {
-  self iprintln("^1ADMIN NOTICE: Place holder file please remove before posting public."); 
-    wait 0.5;
-  self iprintln("^2This Is a Test Build and should not be posted online.");
-}  
- 
-
-ADME() // Option removed due to no code being added to the selection(NO LONGER USED PLEASE USE Ceers INSTEAD)
-{
-  self iprintln("^1ADMIN NOTICE: There is no code in this selection."); 
-    wait 2;
-  self iprintln("^2Please check download page for updates."); 
-}  
-
-
-
-SlotDisabled() // Placed where an options will be going.
-{
-  self iprintln("^1NOTICE: ^2This Option is disabled."); 
+  self iprintlnbold("^1NOTICE: ^2This Option is disabled."); 
   wait 0.5;
-  self iprintln("^3As it can cause Crashing/Freezing of the game or console."); 
+  self iprintlnbold("^3As it can cause Crashing/Freezing of the game or console."); 
   wait 2;
 }
-
-
-SLEC() // Placed where an options will be going.
-{
-  self iprintln("^1NOTICE: ^2You have selected an ^3empty line.");  
-  wait 1.0;
-    self iprintln("^2This is Owner Code Only!"); 
-}
-
-
-
-
-ADDDLC() // Placed where an options will be going.
-{
-  self iprintln("^1UPDATE: ^2DLC MAPS ARE BEING ADDED INTO THE MENU");  
-}
-
-
-
-PVerChck() // Placed where an options will be going.
-{
-  self iprintln("^1NOTICE: ^2You have downloaded the ps3 tested version."); 
-  wait 1;
-  self iprintln("^2Make sure you are on the system the menu was tested for."); 
-  wait 2;
-  self iprintln("^4This may cause stability issues.");
-  wait 2;
-  self iprintln("^4If you have the correct version ignore this msg");
-}  
 
 
 SlotEmpty() // Placed where an options will be going.
 {
-  self iprintln("^1NOTICE: ^2You have selected a blank option."); 
+  self iprintlnbold("^1NOTICE: ^2You have selected a blank option."); 
   wait 1;
-  self iprintln("^3There is no mod here."); 
+  self iprintlnbold("^3There is no mod here."); 
   wait 2;
-  self iprintln("^4Check download page for updates");
+  self iprintlnbold("^4Check download page for updates");
 }  
 
 
-Ceers() // Missing for blank space. 
-//NOTE:Left blank but you can add a notify in between the "HERE" to allow members to be notifed when they click on the bars in the submenus.
+
+BOT2INFO() // Placed where an options will be going.
 {
-  self iprintln("^2Mod."); 
+  self iprintlnbold("^2Note: Spawing above regular game limits."); 
   wait 1;
-  self iprintln("^2menu."); 
-  wait 1;
-  self iprintln("^2organizer.");
+  self iprintlnbold("^3Will prevent peoples names from showing."); 
+  wait 2;
+  self iprintlnbold("^4In the players list menu.");
+  wait 3;
+  self iprintlnbold("^2If error happens Reduce player/bot count..");
+}
+
+
+
+
+Ceers() //Used for when you put a seperator in your menu(This is not needed but makes it easier you can remove or ignore it)
+{
+  self iprintln("^2Menu Bar/Splitter"); 
 } 
+
 
 God_Toggle()
 {
