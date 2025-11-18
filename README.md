@@ -6,15 +6,9 @@ Update 25-11-08
 Menu stability improvements 
 Checked and working on xbguard and cipher
 
-
 MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
 
-ISSUES RELATED TO CONSOLES.
-Menu can crash on rgh using gsc studio.
-
 Tesseract tested and working fine
-(Menu has no crashing when loading via modded bo2)
-
 -------------------------------------------------------------
 XBOX RGH/BADUPDATE/BADAVATAR
 Rgh - Working as it should.
