@@ -1,10 +1,15 @@
 # Bo2-mod-menu!
 
-Readme revision 7.4.1
+Readme revision 7.5
 
-Update 25-11-18
-Menu stability improvements 
-MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD!
+Menu Facelift and optimizations.
+Made the menu a smaller file size and fixed a few mods that where causing issues.
+
+This is a version 2 but the front end of the menu the user sees has not changed much. I have changed how the menu runs. Smaller U.I and made the menu have a divided subsection to allow memory saving.
+
+This is the first release of the full rebuild so you may experience issues, I will do my best to fix them over time.
+
+MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD
 -------------------------------------------------------------
 -------------------------------------------------------------
 Found some bugs before I ended The development of the menu.
