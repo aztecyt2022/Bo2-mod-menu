@@ -19,4 +19,7 @@ Works as well as xbox rgh.
 PC(STEAM)
 +Menu is not fully tested and not all options have been tested.
 -------------------------------------------------------------
-XBOX RGH/BADUPDATE/BADAVATAR Rgh - Working as it should. BU - Not tested. BA - Not tested.
+XBOX RGH.
+Rgh - Working as it should. 
+BU - Not tested. 
+BA - Not tested.
