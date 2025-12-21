@@ -1,6 +1,6 @@
 # Bo2-mod-menu!
 
-Readme revision 7.4
+Readme revision 7.4.1
 
 Update 25-11-18
 Menu stability improvements 
@@ -18,15 +18,13 @@ BA - Not tested.
 Found some bugs before I ended The development of the menu.
 I am fixing them before I Discontinued the menus development.
 -------------------------------------------------------------
-PS3
-+PS3Hen is not tested and unsure if it works use at own risk.
+PS3 HEN
+Not tested and unsure if it works use at own risk.
 -------------------------------------------------------------
+PS3 CFW. 
+Works as well as xbox rgh.
 -------------------------------------------------------------
 PC(STEAM)
 +Menu is not fully tested and not all options have been tested.
 -------------------------------------------------------------
 
--------------------------------------------------------------
-                    NOTES FOR MENU
-                      TBA
--------------------------------------------------------------
