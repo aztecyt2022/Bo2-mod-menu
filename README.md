@@ -10,9 +10,16 @@ This is a version 2 but the front end of the menu the user sees has not changed 
 you may experience issues.
 I will do my best to fix them over time.
 
-MENU BASE ATTACHED TO .TXT DOC IN DOWNLOAD
+
 -------------------------------------------------------------
+
+Old base Using Version 1.6.X
+Menu Base By TORQ.
+This base has the auto god mode turned off and a few fixes that caused random crashing.
+https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
 -------------------------------------------------------------
+New base using version 2.0.0
+https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
 -------------------------------------------------------------
 PS3 HEN
 Not tested and unsure if it works use at own risk.
