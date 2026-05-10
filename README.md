@@ -1,6 +1,10 @@
 # Bo2-mod-menu!
 
-Readme revision 7.5
+Readme revision 8.2 final
+
+NO MORE MENU UPDATES. CREATOR HAS RETIRED ALL PROJECTS.
+menu is open source feel free to mess with it how you like I do not care!
+
 
 Menu Facelift and optimizations.
 Made the menu a smaller file size and fixed a few mods that where causing issues.
