@@ -1,6 +1,14 @@
 # Bo2-mod-menu!
 
-Readme revision 8.2 final
+Readme revision 8.3 
+
+Quick Hot patch!
+Found a bug in the code after sometime away.
+Pushing an update to improve reliability and to further prevent menu crashing.
+
+New version also has a new release version you can download.
+File and folder placement has changed this now includes all source files.
+USE GSC STUDIO OR OTHER GSC APPS TO LOAD/OPEN.
 
 NO MORE MENU UPDATES. CREATOR HAS RETIRED ALL PROJECTS.
 menu is open source feel free to mess with it how you like I do not care!
