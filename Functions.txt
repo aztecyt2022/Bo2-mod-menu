@@ -1,31 +1,12 @@
-SlotDisabled() // An Option to use when a Mod is glitchy after adding.Used for temp disable while fix is applied.
-{
-  wait 0.8;
-  self iprintlnbold("^1NOTICE: ^2This Option is disabled."); 
-  wait 0.3;
-  self iprintlnbold("^3As it can cause Crashing/Freezing of the game or console."); 
-}
-
-
-SlotEmpty() // Placed where an options will be going.
-{
-  self iprintlnbold("^1NOTICE: ^2You have selected a blank option."); 
-  wait 1;
-  self iprintlnbold("^3There is no mod here."); 
-  wait 2;
-  self iprintlnbold("^4Check download page for updates");
-}  
-
-
-
 BOT2INFO() // Placed where an options will be going.
 {
+  wait 6;
   self iprintlnbold("^2Note: Spawing above regular game limits."); 
-  wait 1;
+  wait 8;
   self iprintlnbold("^3Will prevent peoples names from showing."); 
-  wait 2;
-  self iprintlnbold("^4In the players list menu.");
-  wait 3;
+  wait 8;
+  self iprintlnbold("^3In the players list menu.");
+  wait 14;
   self iprintlnbold("^2If error happens Reduce player/bot count..");
 }
 
@@ -283,7 +264,7 @@ unammo()
     self endon("stop_unlimitedammo");
     self iPrintln("unlimited ammo ^2[Active]");
 	wait 0.8;
-    self iPrintln("^2Cannot be turned off at this time!");
+    self iPrintln("^2Cannot be turned off");
     for(;;)
     {
         wait 0.1;
