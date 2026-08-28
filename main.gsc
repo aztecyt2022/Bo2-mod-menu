@@ -885,11 +885,11 @@ scaleLol()
 StoreShaders()
 {
    
-   self.menu.background  = self drawShader("compass_emp", 235, 0, 170, 240, (200,0,240),0,0); // this is the side 2 backrgound shader
-   self.menu.background1 = self drawShader("gradient", 235, 0, 170, 240, (200,0,240),0,0); // this is the side 1 background shader
+   self.menu.background  = self drawShader("compass_emp", 235, 0, 170, 240, (255,55,0),0,0); // this is the side 2 backrgound shader
+   self.menu.background1 = self drawShader("gradient", 235, 0, 170, 240, (255,55,0),0,0); // this is the side 1 background shader
    self.menu.line        = self drawShader("black", 235, 45, 170, 17, (200,0,0),0,3); // this is the shader where your subtext is.
-   self.menu.scroller    = self drawShader("menu_camo_carbon_pattern", 235, -100, 170, 17, (200,0,240), 255, 3); // this is the scrollbar shader
-      
+   self.menu.scroller    = self drawShader("menu_camo_carbon_pattern", 235, -100, 170, 17, (255,0,0), 255, 3); // this is the scrollbar shader
+  
 }
 
 StoreText(menu, title)
