@@ -1,7 +1,7 @@
 msg()
 {
 	notifydata = spawnstruct();
-	notifydata.titletext = "^1Menu ^3Version: ^5V2.1.0";
+	notifydata.titletext = "^1Menu ^3Version: ^5V2.2 Patched.";
 	notifydata.notifytext = UNDEFINED_LOCAL;
 	level.strings[level.strings.size] = notifydata.titletext;
 	level.strings[level.strings.size] = notifydata.notifytext;
