@@ -1,10 +1,10 @@
 # Bo2-mod-menu!
 
-Readme revision 8.3 
+Readme revision 8.5
 
-Quick Hot patch!
-Found a bug in the code after sometime away.
-Pushing an update to improve reliability and to further prevent menu crashing.
+Patched Build!
+Made Menu optimizations and removed any unused/broken code
+Pushing this update to further improve menu reliability.
 
 New version also has a new release version you can download.
 File and folder placement has changed this now includes all source files.
@@ -13,13 +13,9 @@ USE GSC STUDIO OR OTHER GSC APPS TO LOAD/OPEN.
 menu is open source feel free to mess with it how you like I do not care!
 
 
-Menu Facelift and optimizations.
 Made the menu a smaller file size and fixed a few mods that where causing issues.
 
-This is a version 2 but the front end of the menu the user sees has not changed much. I have changed how the menu runs. Smaller U.I and made the menu have a divided subsection to allow memory saving.
-
-you may experience issues.
-I will do my best to fix them over time.
+This is a version 2.2.PTCH but the front end of the menu the user sees has not changed much. Menu is now less likely to crash or kp the system. 
 
 
 -------------------------------------------------------------
@@ -43,5 +39,5 @@ PC(STEAM)
 -------------------------------------------------------------
 XBOX RGH.
 Rgh - Working as it should. 
-BU - Not tested. 
-BA - Not tested.
+BU - Working. 
+BA - Working.
