@@ -1,6 +1,11 @@
 # Bo2-mod-menu!
+DOES NOT WORK ON PS4
+I AM WORKING ON A FIXED VERSION FOR PS4
 
-Readme revision 8.5
+
+
+
+Readme revision 8.7
 
 Patched Build!
 Made Menu optimizations and removed any unused/broken code
