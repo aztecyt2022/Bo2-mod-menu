@@ -3,6 +3,9 @@ UPDATED AND WORKING ON PS4 WITH VERSION 2.4.
 2.4 IS NOT TESTED ON XBOX 360, PS3 OR PC
 
 
+the .gsc files are not the 2.4 build.
+the 2.4 build files are not uploaded and you must rely on the single .gsc file for the menu to work.
+The source for this version will be uploaded at a later date when it is ready. I am still working out issues and I want the most stable version for the source code.
 
 
 
