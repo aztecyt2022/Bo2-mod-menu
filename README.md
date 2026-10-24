@@ -35,10 +35,11 @@ https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
 New base using version 2
 https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
 -------------------------------------------------------------
-PS3 HEN
-Not tested and unsure if it works use at own risk.
+PS4 BUILD.
+WORKS AS WELL AS RGH.
+Known issue: Unknown Stability issues during long game sessions.
 -------------------------------------------------------------
-PS3 CFW. 
+PS3 JailBreak/CFW. 
 Works as well as xbox rgh.
 -------------------------------------------------------------
 PC(STEAM)
