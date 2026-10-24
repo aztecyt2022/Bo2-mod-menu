@@ -1,5 +1,8 @@
 # Bo2-mod-menu!
-
+----------------------------------------------------------------
+I have removed the source at this time.
+It will be back soon! I am packing both sources into 1 folder.
+this will help users keep everything in 1 place.
 ----------------------------------------------------------------
 - Mod menu: R3D AC1D
 - GAME:BLACK OPS II MP
