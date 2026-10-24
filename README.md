@@ -45,7 +45,6 @@ Works as well as xbox rgh.
 PC(STEAM)
 +Menu is not fully tested and not all options have been tested.
 -------------------------------------------------------------
-XBOX RGH.
-Rgh - Working as it should. 
-BU - Working. 
-BA - Working.
+RGH/BAD UPDATE/AVATAR/ETC.....
+Initial Build/testing console Works best on here. 
+--------------------------------------------------------------
