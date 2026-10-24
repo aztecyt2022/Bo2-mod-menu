@@ -1,7 +1,15 @@
 # Bo2-mod-menu!
-UPDATED AND WORKING ON PS4 WITH VERSION 2.4.
-2.4 IS NOT TESTED ON XBOX 360, PS3 OR PC
 
+----------------------------------------------------------------
+- Mod menu: R3D AC1D RGH/PS3/PS4/PC
+- GAME:BLACK OPS II MP
+- CONSOLE: PS3/4, RGH/BAD UPDATE, PS4(HEN), PC(GSC LOADER)
+- MENU VERSION CLASSIC CONSOLE: V2.2.X
+- MENU VERSION PS4: V2.4.1
+- LAST UPDATED ON 2026/10/23 @ 10:43
+-
+-
+-
 -------------------------------------------------------------------
 
 The files in this repo above are not the source files for the 2.4 build of the menu for ps4.
