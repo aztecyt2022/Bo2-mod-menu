@@ -1,7 +1,7 @@
 # Bo2-mod-menu!
 
 ----------------------------------------------------------------
-- Mod menu: R3D AC1D RGH/PS3/PS4/PC
+- Mod menu: R3D AC1D
 - GAME:BLACK OPS II MP
 - CONSOLE: PS3/4, RGH/BAD UPDATE, PS4(HEN), PC(GSC LOADER)
 - MENU VERSION CLASSIC CONSOLE: V2.2.X
