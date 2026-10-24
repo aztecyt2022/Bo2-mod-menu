@@ -17,8 +17,7 @@ Made Menu optimizations and removed any unused/broken code
 Pushing this update to further improve menu reliability.
 
 New version also has a new release version you can download.
-File and folder placement has changed this now includes all source files.
-USE GSC STUDIO OR OTHER GSC APPS TO LOAD/OPEN.
+
 
 menu is open source feel free to mess with it how you like I do not care!
 
