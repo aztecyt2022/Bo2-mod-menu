@@ -1,6 +1,7 @@
 # Bo2-mod-menu!
 ----------------------------------------------------------------
-
+Added the rgh source back.
+Ps4 source is on this also Just changes and fixes made to work with DeadOps.
 ----------------------------------------------------------------
 - Mod menu: R3D AC1D
 - GAME:BLACK OPS II MP
