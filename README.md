@@ -12,8 +12,8 @@ Ps4 source is on this also Just changes and fixes made to work with DeadOps.
 --------------------------------------------------------------
 - Mod menu: R3D AC1D
 - GAME:BLACK OPS II MP
-- CONSOLE: PS4
-- MENU VERSION PS4: V2.8
+- CONSOLE: PS4 13.52 AND BELOW ONLY FOR NOW!
+- MENU VERSION PS4: V3.1
 - LAST UPDATED ON 2026/11/10 @ 11:16PM NL
 -------------------------------------------------------------
 
