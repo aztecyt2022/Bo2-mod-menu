@@ -1,20 +1,14 @@
-# Bo2-mod-menu.
+# -Bo2-mod-menu-
 -------------------------------------------------------
-Added the rgh source back.
+---->SOURCES HAVE BEEN ADDED BACK FOR BOTH PLATFORMS<----
 -------------------------------------------------------
-Ps4 source is on this also Just changes and fixes made to work with DeadOps.
--------------------------------------------------------
-- Mod menu: R3D AC1D
-- GAME:BLACK OPS II MP
-- CONSOLE: PS3, RGH/BAD UPDATE, PS4(HEN), PC(GSC LOADER)
-- MENU VERSION CLASSIC CONSOLE: V2.2.X
-- LAST UPDATED ON 2026/11/10 @ 11:16PM NL
---------------------------------------------------------------
-- Mod menu: R3D AC1D
-- GAME:BLACK OPS II MP
-- CONSOLE: PS4 13.52 AND BELOW ONLY FOR NOW!
-- MENU VERSION PS4: V3.1
-- LAST UPDATED ON 2026/11/10 @ 11:16PM NL
+- Mod menu: >R3D AC1D
+- GAME:BLACK OPS II MP ->PS4(1.10)<-
+- CONSOLE: PS3, RGH/BAD UPDATE, ->PS4 14.02 AND BELOW<-, PC
+- MENU VERSION CLASSIC CONSOLE: V2.2(->RETIRED<-)
+- MENU VERSION PS4: V3.4B1
+-------------------------------------------------------------
+->LAST UPDATED ON 2026/11/24 @ 5:36AM NL <-
 -------------------------------------------------------------
 
 -------------------------------------------------------------
