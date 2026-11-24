@@ -10,26 +10,14 @@
 -------------------------------------------------------------
 - >LAST UPDATED ON 2026/11/24 @ 5:36AM NL-
 -------------------------------------------------------------
+-------------------------------------------------------------
+-------------------------------------------------------------
+OLD LINKS GOT THE CAN IDKY!
 
+I will upload the source for the og menu base when I can find
+it again and I have time to rebuild the fixes. I lost the old
+base as I did a storage drive clean up and I removed that
+base file by accident.
 -------------------------------------------------------------
-Old base Using Version 1.6.X
-Menu Base By TORQ.
-This base has the auto god mode turned off and a few fixes that caused random crashing.
-https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
 -------------------------------------------------------------
-New base using version 2
-https://mega.nz/folder/CZhUCA7R#_kShHBZkiHM2LPxM3leOyg
--------------------------------------------------------------
-PS4 BUILD.
-WORKS AS WELL AS RGH.
-Known issue: Unknown Stability issues during long game sessions.
--------------------------------------------------------------
-PS3 JailBreak/CFW. 
-Works as well as xbox rgh.
--------------------------------------------------------------
-PC(STEAM)
-+Menu is not fully tested and not all options have been tested.
--------------------------------------------------------------
-RGH/BAD UPDATE/AVATAR/ETC.....
-Initial Build/testing console Works best on here. 
 --------------------------------------------------------------
